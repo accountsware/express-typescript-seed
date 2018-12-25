@@ -44,7 +44,7 @@ export class Auth {
                 if(authorized) {
                     return done(null, user);
                 } else {
-                    return done(null, false)
+                    return done(null, false);
                 }
             } else {
                 return done("No user found", false);

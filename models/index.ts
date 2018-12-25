@@ -3,6 +3,7 @@ import {AccessToken} from "./entities/AccessToken";
 import {AuthorizationCode} from "./entities/AuthorizationCode";
 import {Client} from "./entities/Client";
 import {User} from "./entities/User";
+import {Company} from "./entities/Company";
 
 export {Sequelize} from 'sequelize-typescript';
 export {AccessToken} from "./entities/AccessToken";
@@ -24,13 +25,13 @@ export class Models {
 
     public initModels() {
         this.sequelize.addModels(this.getModels());
-        return this.sequelize.sync({force: process.env.NODE_ENV === 'test'});
+        return this.sequelize.sync({force: process.env.NODE_ENV === 'development'});
     }
 
     // TODO Scan models folder to build list
     private getModels() {
         return [
-            AccessToken, AuthorizationCode, Client, User
+            AccessToken, AuthorizationCode, Client, User, Company
         ];
     }
 }

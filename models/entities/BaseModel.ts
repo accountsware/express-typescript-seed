@@ -4,7 +4,7 @@ import {
 } from 'sequelize-typescript';
 
 @Table
-export class BaseModel<T> extends Model<T> {
+export class BaseModel<T extends Model<T>> extends Model<T> {
 
     @IsUUID(4)
     @PrimaryKey

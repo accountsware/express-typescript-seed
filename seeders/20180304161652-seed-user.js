@@ -8,7 +8,7 @@ module.exports = {
             firstName: 'Test',
             lastName: 'Admin',
             email: 'test.admin@gmail.com',
-            password: '$2a$10$xYkomxBysjVimxtP7flrTee/iiueeZp5e/FRmu9NKyTpeLpS7O43a',
+            password: 'password',
             role: 'admin',
             creationDate: '1986-07-16 04:05:06',
             updatedOn: '1999-01-08 04:05:06'
@@ -18,7 +18,7 @@ module.exports = {
             firstName: 'Test',
             lastName: 'Member',
             email: 'test.member@gmail.com',
-            password: '$2a$10$xYkomxBysjVimxtP7flrTee/iiueeZp5e/FRmu9NKyTpeLpS7O43a',
+            password: 'password',
             role: 'member',
             creationDate: '1988-01-08 04:05:06',
             updatedOn: '1999-01-08 04:05:06'
